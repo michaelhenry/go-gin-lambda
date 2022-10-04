@@ -1,0 +1,23 @@
+service: hello
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: go1.x
+  stage: dev
+  region: ap-southeast-2 # or your region
+
+package:
+  patterns:
+    - '!./**'
+    - ./bin/**
+
+functions:
+  main:
+    handler: bin/main
+    events:
+      - http:
+          path: /ping
+          method: get
+    environment:
+      GIN_MODE: release
