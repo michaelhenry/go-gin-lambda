@@ -1,2 +1,3 @@
 .severless
 bin
+.env
