@@ -1,6 +1,6 @@
 # go-gin-lambda template
 
-![Gopher-life](https://blog.iamkel.net/assets/blog/go-lang/go-life.png)
+![Gopher-life](https://www.iamkel.net/assets/blog/go-lang/go-life.png)
 
 A very simple way to deploy your go-gin application to aws lambda.
 
